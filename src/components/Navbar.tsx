@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <nav className="bg-white shadow-md h-20 relative z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-full">
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link to="/" className="text-2xl font-bold text-blue-600">
@@ -75,6 +75,13 @@ const Navbar = () => {
             <button className="text-gray-700 hover:text-blue-600">Media</button>
             <button className="text-gray-700 hover:text-blue-600">Volunteer</button>
             <button className="text-gray-700 hover:text-blue-600">About</button>
+
+            {/* Donate Button - Always Visible */}
+            <Link to="/donate">
+              <button className="ml-6 bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-full text-lg transition-all">
+                Donate
+              </button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
