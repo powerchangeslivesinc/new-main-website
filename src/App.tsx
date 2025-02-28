@@ -10,6 +10,7 @@ import ProjectFeed from "./pages/Project-FEED";
 import SeniorConnect from "./pages/Senior-Connect";
 import CrimsonProject from "./pages/The-Crimson-Project";
 import Navbar from "./components/Navbar";
+import Donate from "./pages/Donate"
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/donate" element={<Donate />}/>
           <Route path="/education" element={<Education />} />
           <Route path="/health" element={<Health />} />
           <Route path="/iplay" element={<IPlay/>} />
