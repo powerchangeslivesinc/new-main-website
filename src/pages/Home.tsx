@@ -1,11 +1,17 @@
+import Hero from "../components/Hero";
+
 const Home = () => {
-    return (
+  return (
+    <div>
+      <Hero />
       <div className="p-6 text-center">
-        <h1 className="text-3xl font-bold text-blue-600">Welcome to Power Changes Lives</h1>
-        <p className="text-gray-700 mt-2">Empowering lives through impactful programs and support.</p>
+        <h2 className="text-3xl font-bold text-blue-600">Our Mission</h2>
+        <p className="text-gray-700 mt-4">
+          We are dedicated to providing resources and programs that create lasting change.
+        </p>
       </div>
-    );
-  };
-  
-  export default Home;
-  
+    </div>
+  );
+};
+
+export default Home;

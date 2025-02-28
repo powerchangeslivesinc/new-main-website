@@ -19,7 +19,7 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-6">
+          <div className="hidden md:flex space-x-6 items-center">
             <Link to="/" className="text-gray-700 hover:text-blue-600">
               Home
             </Link>
@@ -75,10 +75,17 @@ const Navbar = () => {
             <button className="text-gray-700 hover:text-blue-600">Media</button>
             <button className="text-gray-700 hover:text-blue-600">Volunteer</button>
             <button className="text-gray-700 hover:text-blue-600">About</button>
+
+            {/* Donate Button - Always Visible */}
+            <Link to="/donate" className="ml-6">
+              <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-6 rounded-full text-lg transition-all">
+                Donate
+              </button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-gray-700 focus:outline-none"
