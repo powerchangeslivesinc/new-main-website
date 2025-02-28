@@ -8,7 +8,7 @@ const Navbar = () => {
   const [donateOpen, setDonateOpen] = useState(false);
 
   return (
-    <nav className="bg-white shadow-md">
+    <nav className="bg-white shadow-md relative z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -28,12 +28,12 @@ const Navbar = () => {
             <div className="relative">
               <button
                 onClick={() => setProgramsOpen(!programsOpen)}
-                className="flex items-center text-gray-700 hover:text-blue-600"
+                className="flex items-center text-gray-700 hover:text-blue-600 focus:outline-none"
               >
                 Programs <ChevronDown size={16} className="ml-1" />
               </button>
               {programsOpen && (
-                <div className="absolute left-0 mt-2 w-56 bg-white shadow-md rounded-md">
+                <div className="absolute left-0 mt-2 w-56 bg-white shadow-md rounded-md z-50">
                   <div className="flex flex-col">
                     <Link to="/education" className="px-4 py-2 hover:bg-gray-100">Education</Link>
                     <Link to="/health" className="px-4 py-2 hover:bg-gray-100">HEALTH®</Link>
@@ -53,12 +53,12 @@ const Navbar = () => {
             <div className="relative">
               <button
                 onClick={() => setDonateOpen(!donateOpen)}
-                className="flex items-center text-gray-700 hover:text-blue-600"
+                className="flex items-center text-gray-700 hover:text-blue-600 focus:outline-none"
               >
                 Donate <ChevronDown size={16} className="ml-1" />
               </button>
               {donateOpen && (
-                <div className="absolute left-0 mt-2 w-56 bg-white shadow-md rounded-md">
+                <div className="absolute left-0 mt-2 w-56 bg-white shadow-md rounded-md z-50">
                   <div className="flex flex-col">
                     <Link to="/donate" className="px-4 py-2 hover:bg-gray-100">Donate Online</Link>
                     <a href="LavaLoveDonationsList11012021.pdf" target="_blank" rel="noopener noreferrer" className="px-4 py-2 hover:bg-gray-100">
@@ -75,13 +75,6 @@ const Navbar = () => {
             <button className="text-gray-700 hover:text-blue-600">Media</button>
             <button className="text-gray-700 hover:text-blue-600">Volunteer</button>
             <button className="text-gray-700 hover:text-blue-600">About</button>
-
-            {/* Donate Button - Always Visible */}
-            <Link to="/donate" className="ml-6">
-              <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-6 rounded-full text-lg transition-all">
-                Donate
-              </button>
-            </Link>
           </div>
 
           {/* Mobile Menu Button */}
