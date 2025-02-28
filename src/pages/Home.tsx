@@ -1,4 +1,5 @@
 import Hero from "../components/Hero";
+import Art from "../components/Art";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
           We are dedicated to providing resources and programs that create lasting change.
         </p>
       </div>
+      <Art/>
     </div>
   );
 };
