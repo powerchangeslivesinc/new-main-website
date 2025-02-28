@@ -64,7 +64,7 @@ const Navbar = () => {
                     <a href="../../src/documents/LavaLoveDonationsList11012021.pdf" target="_blank" rel="noopener noreferrer" className="px-4 py-2 hover:bg-gray-100">
                       Donate Products
                     </a>
-                    <a href="../../src/documents/LavaLoveDonationsList11012021.pdf" target="_blank" rel="noopener noreferrer" className="px-4 py-2 hover:bg-gray-100">
+                    <a href="../../src/documents/LavaLoveDonationsList11012021.pdf" className="px-4 py-2 hover:bg-gray-100">
                       DIY Hygiene Kits
                     </a>
                   </div>
